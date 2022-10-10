@@ -1,0 +1,2129 @@
+{
+	"info": {
+		"_postman_id": "f8fceb8e-8923-4360-ba7d-618bbb462366",
+		"name": "FlowofMomoApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.signUp",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"Swathi\",\n    \"lastName\" : \"Shenoy\",\n    \"phoneNumber\": 123456789,\n    \"emailId\" : \"app@test.mail\",\n    \"password\" : \"123er4567\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/userService/signUp",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userService",
+						"signUp"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "1.signUp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\" : \"Swathi\",\n    \"lastName\" : \"Shenoy\",\n    \"phoneNumber\": 123456789,\n    \"emailId\" : \"app@test.mail\",\n    \"password\" : \"123er4567\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/userService/signUp",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"userService",
+								"signUp"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 15:03:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"firstName\": \"Swathi\",\n    \"lastName\": \"Shenoy\",\n    \"phoneNumber\": 123456789,\n    \"emailId\": \"app@test.mail\",\n    \"password\": \"123er4567\",\n    \"createdDate\": \"2022-10-10T15:03:36.097+00:00\",\n    \"updatedDate\": \"2022-10-10T15:03:36.097+00:00\",\n    \"activeUser\": \"Y\"\n}"
+				},
+				{
+					"name": "1.signUp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\" : \"Manoj\",\n    \"lastName\" : \"Shenoy\",\n    \"phoneNumber\": 1234560098,\n    \"emailId\" : \"manoj@test.mail\",\n    \"password\" : \"123er4567\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/userService/signUp",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"userService",
+								"signUp"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 15:10:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"firstName\": \"Manoj\",\n    \"lastName\": \"Shenoy\",\n    \"phoneNumber\": 1234560098,\n    \"emailId\": \"manoj@test.mail\",\n    \"password\": \"123er4567\",\n    \"createdDate\": \"2022-10-10T15:10:21.042+00:00\",\n    \"updatedDate\": \"2022-10-10T15:10:21.042+00:00\",\n    \"activeUser\": \"Y\"\n}"
+				}
+			]
+		},
+		{
+			"name": "2. Admin - getUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/userService/admin/getAllUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userService",
+						"admin",
+						"getAllUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "2. Admin - getUser",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/userService/admin/getAllUser",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"userService",
+								"admin",
+								"getAllUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 15:10:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"firstName\": \"Swathi\",\n        \"lastName\": \"Shenoy\",\n        \"phoneNumber\": 123456789,\n        \"emailId\": \"app@test.mail\",\n        \"password\": \"123er4567\",\n        \"createdDate\": \"2022-10-10T15:03:36.097+00:00\",\n        \"updatedDate\": \"2022-10-10T15:03:36.097+00:00\",\n        \"activeUser\": \"Y\"\n    },\n    {\n        \"id\": 2,\n        \"firstName\": \"Manoj\",\n        \"lastName\": \"Shenoy\",\n        \"phoneNumber\": 1234560098,\n        \"emailId\": \"manoj@test.mail\",\n        \"password\": \"123er4567\",\n        \"createdDate\": \"2022-10-10T15:10:21.042+00:00\",\n        \"updatedDate\": \"2022-10-10T15:10:21.042+00:00\",\n        \"activeUser\": \"Y\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "3.getUserByEmail",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/userService/getUserEmail/app@test.mail",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userService",
+						"getUserEmail",
+						"app@test.mail"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "3.getUserByEmail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/userService/getUserEmail/app@test.mail",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"userService",
+								"getUserEmail",
+								"app@test.mail"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Disposition",
+							"value": "inline;filename=f.txt"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 15:08:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"firstName\": \"Swathi\",\n    \"lastName\": \"Shenoy\",\n    \"phoneNumber\": 123456789,\n    \"emailId\": \"app@test.mail\",\n    \"password\": \"123er4567\",\n    \"createdDate\": \"2022-10-10T15:03:36.097+00:00\",\n    \"updatedDate\": \"2022-10-10T15:03:36.097+00:00\",\n    \"activeUser\": \"Y\"\n}"
+				}
+			]
+		},
+		{
+			"name": "3.getUserByEmail Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/userService/getUserEmail/app@test.mail",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userService",
+						"getUserEmail",
+						"app@test.mail"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "3.getUserByEmail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/userService/getUserEmail/app@test.mail",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"userService",
+								"getUserEmail",
+								"app@test.mail"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Disposition",
+							"value": "inline;filename=f.txt"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 15:08:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"firstName\": \"Swathi\",\n    \"lastName\": \"Shenoy\",\n    \"phoneNumber\": 123456789,\n    \"emailId\": \"app@test.mail\",\n    \"password\": \"123er4567\",\n    \"createdDate\": \"2022-10-10T15:03:36.097+00:00\",\n    \"updatedDate\": \"2022-10-10T15:03:36.097+00:00\",\n    \"activeUser\": \"Y\"\n}"
+				}
+			]
+		},
+		{
+			"name": "4.getUserById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/userService/getUserId/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userService",
+						"getUserId",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "4.getUserById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/userService/getUserId/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"userService",
+								"getUserId",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 15:11:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"firstName\": \"Manoj\",\n    \"lastName\": \"Shenoy\",\n    \"phoneNumber\": 1234560098,\n    \"emailId\": \"manoj@test.mail\",\n    \"password\": \"123er4567\",\n    \"createdDate\": \"2022-10-10T15:10:21.042+00:00\",\n    \"updatedDate\": \"2022-10-10T15:10:21.042+00:00\",\n    \"activeUser\": \"Y\"\n}"
+				}
+			]
+		},
+		{
+			"name": "5.UserDelete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/userService/deleteUser/manoj@test.mail",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userService",
+						"deleteUser",
+						"manoj@test.mail"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "5.UserDelete",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/userService/deleteUser/manoj@test.mail",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"userService",
+								"deleteUser",
+								"manoj@test.mail"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Disposition",
+							"value": "inline;filename=f.txt"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 15:13:07 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "User Deleted"
+				}
+			]
+		},
+		{
+			"name": "6. ActiveUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/userService/admin/getAllActiveUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userService",
+						"admin",
+						"getAllActiveUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "6. ActiveUser",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/userService/admin/getAllActiveUser",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"userService",
+								"admin",
+								"getAllActiveUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 15:13:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"firstName\": \"Swathi\",\n        \"lastName\": \"Shenoy\",\n        \"phoneNumber\": 123456789,\n        \"emailId\": \"app@test.mail\",\n        \"password\": \"123er4567\",\n        \"createdDate\": \"2022-10-10T15:03:36.097+00:00\",\n        \"updatedDate\": \"2022-10-10T15:03:36.097+00:00\",\n        \"activeUser\": \"Y\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "7. getAllInactiveUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/userService/admin/getAllInactiveUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userService",
+						"admin",
+						"getAllInactiveUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "7. getAllInactiveUser",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/userService/admin/getAllInactiveUser",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"userService",
+								"admin",
+								"getAllInactiveUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 15:14:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"firstName\": \"Manoj\",\n        \"lastName\": \"Shenoy\",\n        \"phoneNumber\": 1234560098,\n        \"emailId\": \"manoj@test.mail\",\n        \"password\": \"123er4567\",\n        \"createdDate\": \"2022-10-10T15:10:21.042+00:00\",\n        \"updatedDate\": \"2022-10-10T15:13:07.672+00:00\",\n        \"activeUser\": \"N\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "8. updateUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"Swathi\",\n    \"lastName\" : \"Shenoy\",\n    \"phoneNumber\": 1111111111,\n    \"emailId\" : \"app@test.mail\",\n    \"password\" : \"123er4567\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/userService/updateUser/app@test.mail",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userService",
+						"updateUser",
+						"app@test.mail"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "8. updateUser",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\" : \"Swathi\",\n    \"lastName\" : \"Shenoy\",\n    \"phoneNumber\": 1111111111,\n    \"emailId\" : \"app@test.mail\",\n    \"password\" : \"123er4567\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/userService/updateUser/app@test.mail",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"userService",
+								"updateUser",
+								"app@test.mail"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Disposition",
+							"value": "inline;filename=f.txt"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 15:16:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"firstName\": \"Swathi\",\n    \"lastName\": \"Shenoy\",\n    \"phoneNumber\": 123456789,\n    \"emailId\": \"app@test.mail\",\n    \"password\": \"123er4567\",\n    \"createdDate\": \"2022-10-10T15:03:36.097+00:00\",\n    \"updatedDate\": \"2022-10-10T15:16:18.276+00:00\",\n    \"activeUser\": \"Y\"\n}"
+				}
+			]
+		},
+		{
+			"name": "9. AddMenuItemVeg",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuItemId\" : \"I1001\",\n    \"itemName\":\"Momo1\",\n    \"description\": \"testingMomo\",\n    \"cost\": 20.00,\n    \"itemType\": \"Veg\",\n    \"availability\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/menuService/getMenuItems/admin/addItem",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"menuService",
+						"getMenuItems",
+						"admin",
+						"addItem"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "9. AddMenuItemVeg",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"menuItemId\" : \"I1001\",\n    \"itemName\":\"Momo1\",\n    \"description\": \"testingMomo\",\n    \"cost\": 20.00,\n    \"itemType\": \"Veg\",\n    \"availability\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/menuService/getMenuItems/admin/addItem",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"getMenuItems",
+								"admin",
+								"addItem"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:09:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"menuId\": 1,\n    \"menuItemId\": \"I1001\",\n    \"itemName\": \"Momo1\",\n    \"description\": \"testingMomo\",\n    \"cost\": 20,\n    \"itemType\": \"Veg\",\n    \"availability\": true\n}"
+				},
+				{
+					"name": "9. AddMenuItemVeg",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"menuItemId\" : \"I1002\",\n    \"itemName\":\"Momo2\",\n    \"description\": \"testingMomo\",\n    \"cost\": 40.00,\n    \"itemType\": \"NonVeg\",\n    \"availability\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/menuService/getMenuItems/admin/addItem",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"getMenuItems",
+								"admin",
+								"addItem"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:10:38 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"menuId\": 2,\n    \"menuItemId\": \"I1002\",\n    \"itemName\": \"Momo2\",\n    \"description\": \"testingMomo\",\n    \"cost\": 40,\n    \"itemType\": \"NonVeg\",\n    \"availability\": true\n}"
+				},
+				{
+					"name": "9. AddMenuItemVeg",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"menuItemId\" : \"I1003\",\n    \"itemName\":\"Momo3\",\n    \"description\": \"testingMomo3\",\n    \"cost\": 40.00,\n    \"itemType\": \"NonVeg\",\n    \"availability\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/menuService/getMenuItems/admin/addItem",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"getMenuItems",
+								"admin",
+								"addItem"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:11:07 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"menuId\": 3,\n    \"menuItemId\": \"I1003\",\n    \"itemName\": \"Momo3\",\n    \"description\": \"testingMomo3\",\n    \"cost\": 40,\n    \"itemType\": \"NonVeg\",\n    \"availability\": true\n}"
+				},
+				{
+					"name": "9. AddMenuItemVeg",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"menuItemId\" : \"I1004\",\n    \"itemName\":\"Momo4\",\n    \"description\": \"testingMomo4\",\n    \"cost\": 200.00,\n    \"itemType\": \"Veg\",\n    \"availability\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/menuService/getMenuItems/admin/addItem",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"getMenuItems",
+								"admin",
+								"addItem"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:16:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"menuId\": 4,\n    \"menuItemId\": \"I1004\",\n    \"itemName\": \"Momo4\",\n    \"description\": \"testingMomo4\",\n    \"cost\": 200,\n    \"itemType\": \"Veg\",\n    \"availability\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "10.AllItem-Available",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/menuService/getMenuItems/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"menuService",
+						"getMenuItems",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AllItem-Available",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/menuService/getMenuItems/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"getMenuItems",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:11:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"menuId\": 1,\n        \"menuItemId\": \"I1001\",\n        \"itemName\": \"Momo1\",\n        \"description\": \"testingMomo\",\n        \"cost\": 20,\n        \"itemType\": \"Veg\",\n        \"availability\": true\n    },\n    {\n        \"menuId\": 2,\n        \"menuItemId\": \"I1002\",\n        \"itemName\": \"Momo2\",\n        \"description\": \"testingMomo\",\n        \"cost\": 40,\n        \"itemType\": \"NonVeg\",\n        \"availability\": true\n    },\n    {\n        \"menuId\": 3,\n        \"menuItemId\": \"I1003\",\n        \"itemName\": \"Momo3\",\n        \"description\": \"testingMomo3\",\n        \"cost\": 40,\n        \"itemType\": \"NonVeg\",\n        \"availability\": true\n    }\n]"
+				},
+				{
+					"name": "AllItem-Available-afterUpdate",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/menuService/getMenuItems/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"getMenuItems",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:13:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"menuId\": 2,\n        \"menuItemId\": \"I1002\",\n        \"itemName\": \"Momo2\",\n        \"description\": \"testingMomo\",\n        \"cost\": 40,\n        \"itemType\": \"NonVeg\",\n        \"availability\": true\n    },\n    {\n        \"menuId\": 3,\n        \"menuItemId\": \"I1003\",\n        \"itemName\": \"Momo3\",\n        \"description\": \"testingMomo3\",\n        \"cost\": 40,\n        \"itemType\": \"NonVeg\",\n        \"availability\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "11.AllItembyId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/menuService/getItemById/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"menuService",
+						"getItemById",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AllItembyId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/menuService/getItemById/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"getItemById",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:11:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"menuId\": 1,\n    \"menuItemId\": \"I1001\",\n    \"itemName\": \"Momo1\",\n    \"description\": \"testingMomo\",\n    \"cost\": 20,\n    \"itemType\": \"Veg\",\n    \"availability\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "12.AllItembyItemId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/menuService/getItembyMenuId/I1003",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"menuService",
+						"getItembyMenuId",
+						"I1003"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AllItembyItemId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/menuService/getItembyMenuId/I1003",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"getItembyMenuId",
+								"I1003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:12:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"menuId\": 3,\n    \"menuItemId\": \"I1003\",\n    \"itemName\": \"Momo3\",\n    \"description\": \"testingMomo3\",\n    \"cost\": 40,\n    \"itemType\": \"NonVeg\",\n    \"availability\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "13.updateItemAvailability-false",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuId\":1,\n    \"menuItemId\" : \"I1001\",\n    \"availability\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/menuService/admin/updateItemAvailability",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"menuService",
+						"admin",
+						"updateItemAvailability"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateItemAvailability-false",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"menuId\":1,\n    \"menuItemId\" : \"I1001\",\n    \"availability\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/menuService/admin/updateItemAvailability",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"admin",
+								"updateItemAvailability"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:12:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"menuId\": 1,\n    \"menuItemId\": \"I1001\",\n    \"itemName\": \"Momo1\",\n    \"description\": \"testingMomo\",\n    \"cost\": 20,\n    \"itemType\": \"Veg\",\n    \"availability\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "14. AllItembyavailability - availableItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/menuService/getMenuItemsAvail/y",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"menuService",
+						"getMenuItemsAvail",
+						"y"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "14. AllItembyavailability - availableItems",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/menuService/getMenuItemsAvail/y",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"getMenuItemsAvail",
+								"y"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:14:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"menuId\": 2,\n        \"menuItemId\": \"I1002\",\n        \"itemName\": \"Momo2\",\n        \"description\": \"testingMomo\",\n        \"cost\": 40,\n        \"itemType\": \"NonVeg\",\n        \"availability\": true\n    },\n    {\n        \"menuId\": 3,\n        \"menuItemId\": \"I1003\",\n        \"itemName\": \"Momo3\",\n        \"description\": \"testingMomo3\",\n        \"cost\": 40,\n        \"itemType\": \"NonVeg\",\n        \"availability\": true\n    }\n]"
+				},
+				{
+					"name": "14. AllItembyavailability - notavailableItems",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/menuService/getMenuItemsAvail/N",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"getMenuItemsAvail",
+								"N"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:14:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"menuId\": 1,\n        \"menuItemId\": \"I1001\",\n        \"itemName\": \"Momo1\",\n        \"description\": \"testingMomo\",\n        \"cost\": 20,\n        \"itemType\": \"Veg\",\n        \"availability\": false\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "15. DeleteItemMenu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuId\":4,\n    \"menuItemId\" : \"I1004\",\n    \"availability\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/menuService/admin/deleteMenuItems",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"menuService",
+						"admin",
+						"deleteMenuItems"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "15. DeleteItemMenu",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"menuId\":4,\n    \"menuItemId\" : \"I1004\",\n    \"availability\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/menuService/admin/deleteMenuItems",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"admin",
+								"deleteMenuItems"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "24"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:22:53 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "item in MenuList Deleted"
+				},
+				{
+					"name": "10.AllItem-Available",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/menuService/getMenuItems/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"menuService",
+								"getMenuItems",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:23:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"menuId\": 2,\n        \"menuItemId\": \"I1002\",\n        \"itemName\": \"Momo2\",\n        \"description\": \"testingMomo\",\n        \"cost\": 40,\n        \"itemType\": \"NonVeg\",\n        \"availability\": true\n    },\n    {\n        \"menuId\": 3,\n        \"menuItemId\": \"I1003\",\n        \"itemName\": \"Momo3\",\n        \"description\": \"testingMomo3\",\n        \"cost\": 40,\n        \"itemType\": \"NonVeg\",\n        \"availability\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "16. AddToCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userEmailId\": \"app@test.mail\",\n    \"cartItemList\":[\n        {\n            \"menuItemId\":\"I1001\",\n            \"quantity\":2,\n            \"cost\":20\n            \n        },\n        {\n            \"menuItemId\":\"I1002\",\n            \"quantity\":2,\n            \"cost\":20\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/cartService/addToCart",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"cartService",
+						"addToCart"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "16. AddToCart",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userEmailId\": \"app@test.mail\",\n    \"cartItemList\":[\n        {\n            \"menuItemId\":\"I1001\",\n            \"quantity\":2,\n            \"cost\":20\n            \n        },\n        {\n            \"menuItemId\":\"I1002\",\n            \"quantity\":2,\n            \"cost\":20\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cartService/addToCart",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cartService",
+								"addToCart"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:25:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userEmailId\": \"app@test.mail\",\n    \"cartItemList\": [\n        {\n            \"menuItemId\": \"I1002\",\n            \"quantity\": 2,\n            \"cost\": 20\n        }\n    ],\n    \"total\": 40\n}"
+				},
+				{
+					"name": "16. AddToCart",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userEmailId\": \"app@test.mail\",\n    \"cartItemList\":[\n        {\n            \"menuItemId\":\"I1003\",\n            \"quantity\":2,\n            \"cost\":40\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cartService/addToCart",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cartService",
+								"addToCart"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:27:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userEmailId\": \"app@test.mail\",\n    \"cartItemList\": [\n        {\n            \"menuItemId\": \"I1003\",\n            \"quantity\": 2,\n            \"cost\": 40\n        }\n    ],\n    \"total\": 80\n}"
+				}
+			]
+		},
+		{
+			"name": "17. viewCart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/cartService/viewCart/app@test.mail",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"cartService",
+						"viewCart",
+						"app@test.mail"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "17. viewCart",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cartService/viewCart/app@test.mail",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cartService",
+								"viewCart",
+								"app@test.mail"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Disposition",
+							"value": "inline;filename=f.txt"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:27:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userEmailId\": \"app@test.mail\",\n    \"cartItemList\": [\n        {\n            \"menuItemId\": \"I1002\",\n            \"quantity\": 2,\n            \"cost\": 40\n        },\n        {\n            \"menuItemId\": \"I1003\",\n            \"quantity\": 2,\n            \"cost\": 40\n        }\n    ],\n    \"total\": 160\n}"
+				}
+			]
+		},
+		{
+			"name": "18. updateQuantity",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userEmailId\":\"app@test.mail\",\n    \"cartItemList\":[\n        {\n            \"menuItemId\":\"I1003\",\n            \"quantity\": 10\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/cartService/updateQuantity",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"cartService",
+						"updateQuantity"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "18. updateQuantity",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userEmailId\":\"app@test.mail\",\n    \"cartItemList\":[\n        {\n            \"menuItemId\":\"I1003\",\n            \"quantity\": 10\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cartService/updateQuantity",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cartService",
+								"updateQuantity"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:27:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userEmailId\": \"app@test.mail\",\n    \"cartItemList\": [\n        {\n            \"menuItemId\": \"I1002\",\n            \"quantity\": 2,\n            \"cost\": 40\n        },\n        {\n            \"menuItemId\": \"I1003\",\n            \"quantity\": 10,\n            \"cost\": 40\n        }\n    ],\n    \"total\": 480\n}"
+				}
+			]
+		},
+		{
+			"name": "19. removeItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userEmailId\":\"app@test.mail\",\n    \"menuItemId\":\"I1003\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/cartService/removeItem",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"cartService",
+						"removeItem"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "19. removeItem",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userEmailId\":\"app@test.mail\",\n    \"menuItemId\":\"I1003\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/cartService/removeItem",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cartService",
+								"removeItem"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:28:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userEmailId\": \"app@test.mail\",\n    \"cartItemList\": [\n        {\n            \"menuItemId\": \"I1002\",\n            \"quantity\": 2,\n            \"cost\": 40\n        }\n    ],\n    \"total\": 80\n}"
+				},
+				{
+					"name": "17. viewCart",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/cartService/viewCart/app@test.mail",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"cartService",
+								"viewCart",
+								"app@test.mail"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Disposition",
+							"value": "inline;filename=f.txt"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:29:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userEmailId\": \"app@test.mail\",\n    \"cartItemList\": [\n        {\n            \"menuItemId\": \"I1002\",\n            \"quantity\": 2,\n            \"cost\": 40\n        }\n    ],\n    \"total\": 80\n}"
+				}
+			]
+		},
+		{
+			"name": "20. OrderPlaced",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userEmailId\" : \"app@test.mail\",\n    \"orderScheduled\": \"N\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8083/orderService/getOrders",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"orderService",
+						"getOrders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "20. OrderPlaced",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userEmailId\" : \"app@test.mail\",\n    \"orderScheduled\": \"N\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/orderService/getOrders",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"orderService",
+								"getOrders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Oct 2022 17:29:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orderId\": 1,\n    \"userId\": null,\n    \"status\": \"Active\",\n    \"orderScheduled\": \"N\",\n    \"createdDate\": \"2022-10-10T22:59:57.492\",\n    \"updatedDate\": \"2022-10-10T22:59:57.492\",\n    \"scheduledDate\": null,\n    \"scheduledTime\": null,\n    \"cartDisplayDAOList\": {\n        \"userEmailId\": \"app@test.mail\",\n        \"cartItemList\": [\n            {\n                \"menuItemId\": \"I1002\",\n                \"quantity\": 2,\n                \"cost\": 40\n            }\n        ],\n        \"total\": 80\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "21. GetPreviousOrder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/orderService/getPreviousOrder/app@test.mail",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"orderService",
+						"getPreviousOrder",
+						"app@test.mail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "22. scheduleOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userEmailId\" : \"app@test.mail\",\n    \"orderScheduled\": \"Y\",\n    \"scheduledTime\":\"16:00:00\",\n    \"scheduledDate\":\"2022-10-09\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8083/orderService/getOrders",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"orderService",
+						"getOrders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
