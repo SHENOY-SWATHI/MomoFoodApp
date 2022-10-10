@@ -107,10 +107,7 @@ public class UserServiceImpl implements UserService{
     @Override
     public User findByEmail(String emailId) {
         LOGGER.info("Entered in UserServiceImpl.findByEmail()");
-        User user = userRepo.findByEmail(emailId);
-        if(user != null){
-            return user;
-        } else throw new UserDoesnotExistsException("User was not found");
+        return userRepo.findByEmail(emailId);
     }
 
     @Override

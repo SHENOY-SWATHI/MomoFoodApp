@@ -1,6 +1,7 @@
 package com.food.app.momo.Controller;
 
 import com.food.app.momo.Exceptions.UserAlreadyExistsException;
+import com.food.app.momo.Exceptions.UserDoesnotExistsException;
 import com.food.app.momo.Model.SignIn;
 import com.food.app.momo.Model.User;
 import com.food.app.momo.Repository.UserRepo;
@@ -48,7 +49,10 @@ public class MomoController {
     @GetMapping(value = "/getUserEmail/{emailId}")
     public User getUser(@PathVariable String emailId){
         LOGGER.info("Entered in MomoController.getUser()");
-        return userService.findByEmail(emailId);
+        User user = userService.findByEmail(emailId);
+        if(user != null){
+            return user;
+        } else throw new UserDoesnotExistsException("User was not found");
     }
 
     @GetMapping(value = "/getUserId/{id}")

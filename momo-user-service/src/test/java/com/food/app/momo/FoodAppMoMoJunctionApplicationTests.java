@@ -99,8 +99,6 @@ class FoodAppMoMoJunctionApplicationTests {
 		User testList = userService.findByEmail("test@test.com");
 		assertThat(testList).isNotNull();
 		assertThat(testList.getEmailId()).isEqualTo("test@test.com");
-		given(userRepo.findByEmail(anyString())).willReturn(null);
-		assertThrows(UserDoesnotExistsException.class,() -> userService.findByEmail("test@test.com"));
 	}
 
 	@Test
