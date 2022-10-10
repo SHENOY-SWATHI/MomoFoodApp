@@ -72,7 +72,7 @@ public class MomoMenuController {
         return menuService.updateItemAvailability(itemAvailability);
     }
 
-    @PostMapping(value = "/admin/deleteMenuItems/{availability}")
+    @PostMapping(value = "/admin/deleteMenuItems")
     public String deleteItem(@RequestBody @NotNull ItemIdentifier itemIdentifier){
         LOGGER.info("Entered MomoMenuController.deleteItem()");
         return menuService.deleteItem(itemIdentifier);

@@ -171,7 +171,7 @@ public class MomoMenuControllerTest {
 
         when(menuService.updateItemAvailability(any(ItemIdentifier.class))).thenReturn(menuItemDAO);
 
-        mockMvc.perform(MockMvcRequestBuilders.post("/menuService/getMenuItems/admin/addItem")
+        mockMvc.perform(MockMvcRequestBuilders.post("/menuService/admin/deleteMenuItems")
                         .content(new ObjectMapper().writeValueAsString(itemIdentifier))
                         .content(new ObjectMapper().writeValueAsString(menuItemDAO))
                         .contentType(MediaType.APPLICATION_JSON))
